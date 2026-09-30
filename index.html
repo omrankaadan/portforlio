@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Omran Kaadan — Software Engineer</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23070b12'/%3E%3Ctext x='32' y='42' font-family='monospace' font-size='28' font-weight='700' fill='%235eead4' text-anchor='middle'%3EOK%3C/text%3E%3C/svg%3E" />
+  <meta name="description" content="Portfolio of Omran Kaadan, software engineer from Dibbiyeh, Lebanon. React, Node.js, Python, PostgreSQL, AI agents and full-stack web development." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "./vendor/three.module.js",
+        "three/addons/": "./vendor/addons/"
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <div id="loader">
+    <div class="loader-inner">
+      <span class="loader-logo">OK</span>
+      <div class="loader-bar"><i></i></div>
+    </div>
+  </div>
+
+  <canvas id="scene"></canvas>
+  <div id="scene-vignette"></div>
+
+  <header id="nav">
+    <a class="nav-logo" href="#hero">OK<span>.</span></a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="./assets/cv.pdf" target="_blank" rel="noopener">CV</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+  </header>
+
+  <main id="content">
+
+    <section class="section hero" id="hero" data-scene="0">
+      <div class="hero-inner reveal">
+        <p class="hero-kicker">Hello, my name is</p>
+        <h1 class="hero-name">Omran<br /><span class="accent">Kaadan</span></h1>
+        <p class="hero-role">Software Engineer — Full-Stack Web &amp; AI</p>
+        <p class="hero-sub">
+          I build modern web applications, APIs and AI agents — from database
+          architecture to polished front-end interfaces.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View my work</a>
+          <a class="btn btn-ghost" href="./assets/cv.pdf" target="_blank" rel="noopener">View CV</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+        <div class="hero-meta">
+          <span>Dibbiyeh, Lebanon</span>
+          <span class="dot"></span>
+          <span>22 y/o</span>
+          <span class="dot"></span>
+          <span>Open to work</span>
+        </div>
+      </div>
+      <div class="scroll-hint">
+        <span>Scroll</span>
+        <div class="scroll-line"><i></i></div>
+      </div>
+    </section>
+
+    <section class="section" id="about" data-scene="1">
+      <div class="panel panel-left panel-about reveal">
+        <p class="section-kicker">01 — About me</p>
+        <h2 class="section-title">Engineer by craft,<br />builder by passion.</h2>
+        <div class="about-grid">
+          <div class="about-copy">
+            <p class="section-text">
+              I'm <strong>Omran Kaadan</strong>, a 22-year-old software engineer from
+              Lebanon and a CCE graduate (2025) of Lebanese International
+              University, currently pursuing my Master's degree. I design and build
+              end-to-end products — REST APIs, databases, reactive front-ends and
+              AI-powered tools.
+            </p>
+            <p class="section-text">
+              I care about clean architecture, debugging tough problems, and shipping
+              interfaces that feel fast and look great. Recently I've been building platforms using
+              AI agents and PDF intelligence tools on top of the OpenAI API.
+            </p>
+            <div class="stat-grid">
+              <div class="stat"><b>12+</b><span>Technologies</span></div>
+              <div class="stat"><b>3</b><span>Featured projects</span></div>
+              <div class="stat"><b>Full-stack</b><span>Focus</span></div>
+            </div>
+            <div class="about-actions">
+              <a class="btn btn-ghost btn-sm" href="./assets/cv.pdf" target="_blank" rel="noopener">View CV ↗</a>
+            </div>
+          </div>
+          <div class="about-photo" id="photo-trigger" role="button" tabindex="0" aria-label="Enlarge photo">
+            <img src="./assets/photo.jpg" alt="Omran Kaadan" loading="lazy" />
+            <span class="photo-zoom-hint">click to enlarge</span>
+          </div>
+        </div>
+      </div>
+    </section> 
+
+    <section class="section" id="skills" data-scene="2">
+      <div class="panel panel-right reveal">
+        <p class="section-kicker">02 — Skills</p>
+        <h2 class="section-title">Tools I build with.</h2>
+        <div class="skills-groups">
+          <div class="skill-group">
+            <h3>Languages</h3>
+            <div class="chips">
+              <span class="chip">Python</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">PHP</span>
+              <span class="chip">SQL</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Frontend</h3>
+            <div class="chips">
+              <span class="chip">React JS</span>
+              <span class="chip">HTML / CSS</span>
+              <span class="chip">Frontend architecture</span>
+              <span class="chip">Mobile applications</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Backend</h3>
+            <div class="chips">
+              <span class="chip">Node JS</span>
+              <span class="chip">Express JS</span>
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">APIs</span>
+              <span class="chip">Backend</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Practices</h3>
+            <div class="chips">
+              <span class="chip">AI agents</span>
+              <span class="chip">Debugging</span>
+              <span class="chip">Web development</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section scene-breath" id="scene-breath" data-scene="3" aria-label="A quiet moment in the 3D workspace"></section>
+
+    <section class="section" id="projects" data-scene="4">
+      <div class="panel panel-wide reveal">
+        <p class="section-kicker">03 — Projects</p>
+        <h2 class="section-title">Things I've shipped.</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="card-top">
+              <span class="card-num">01</span>
+              <a class="card-link" href="http://65.21.59.78/" target="_blank" rel="noopener">Live ↗</a>
+            </div>
+            <h3>Garage Platform</h3>
+            <p>
+              Full-stack garage management platform: car &amp; parts catalog, inventory,
+              advanced search, Excel import, appointments, audit logs and an admin panel
+              with image uploads. Vite/React front-end, Express + PostgreSQL backend,
+              JWT auth with role-based authorization, Zod validation, security hardening
+              and Swagger docs — deployed to production.
+            </p>
+            <div class="chips">
+              <span class="chip">React</span>
+              <span class="chip">Express</span>
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">JWT</span>
+              <span class="chip">REST API</span>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-top">
+              <span class="card-num">02 — 2026</span>
+            </div>
+            <h3>AI PDF Analyzer</h3>
+            <p>
+              AI-powered PDF analysis platform that summarizes documents of any size,
+              extracts highlighted key points and formulas using OpenAI — with chunking,
+              Google auth, subscriptions and a responsive UI for researchers and students,
+              plus an admin dashboard for analytics.
+            </p>
+            <div class="chips">
+              <span class="chip">OpenAI API</span>
+              <span class="chip">Python</span>
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">Node.js</span>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-top">
+              <span class="card-num">03 — 2025</span>
+            </div>
+            <h3>Social Services Platform</h3>
+            <p>
+              Senior project connecting users with social service providers through
+              video-based guidance and direct messaging, featuring a video rating
+              system that promotes highly rated content — plus an admin panel for
+              content and user management.
+            </p>
+            <div class="chips">
+              <span class="chip">React</span>
+              <span class="chip">Node</span>
+              <span class="chip">SQL</span>
+              <span class="chip">Chat</span>
+              <span class="chip">Video</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education" data-scene="5">
+      <div class="panel panel-left reveal">
+        <p class="section-kicker">04 — Education</p>
+        <h2 class="section-title">Academic background.</h2>
+        <div class="timeline" id="education-timeline"></div>
+      </div>
+    </section>
+
+    <section class="section" id="contact" data-scene="6">
+      <div class="panel panel-center reveal">
+        <p class="section-kicker">05 — Contact</p>
+        <h2 class="section-title">Let's build something together.</h2>
+        <p class="section-text">
+          Available for freelance work, full-time roles and interesting
+          collaborations.
+        </p>
+
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="form-row">
+            <label class="field">
+              <span>Your name</span>
+              <input type="text" id="cf-name" name="name" placeholder="John Doe" autocomplete="name" required />
+            </label>
+            <label class="field">
+              <span>Your email</span>
+              <input type="email" id="cf-email" name="email" placeholder="you@example.com" autocomplete="email" required />
+            </label>
+          </div>
+          <label class="field">
+            <span>Message</span>
+            <textarea id="cf-message" name="message" rows="4" placeholder="Tell me about your project…" required></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary btn-send">
+            Send via Gmail <span class="gmail-dot"></span>
+          </button>
+          <p class="form-hint" id="form-hint">Opens Gmail in a new tab with your message ready to send.</p>
+        </form>
+
+        <div class="contact-grid">
+          <a class="contact-item" href="mailto:omrankaadan4@gmail.com">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">omrankaadan4@gmail.com</span>
+          </a>
+          <a class="contact-item" href="tel:+96181717230">
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">+961 81 717 230</span>
+          </a>
+          <a class="contact-item" href="https://www.linkedin.com/in/omran-kaadan-2724b8419" target="_blank" rel="noopener">
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">in/omran-kaadan-2724b8419</span>
+          </a>
+          <a class="contact-item" href="https://github.com/omrankaadan" target="_blank" rel="noopener">
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">github.com/omrankaadan</span>
+          </a>
+        </div>
+        <footer class="footer">
+          <span>© 2026 Omran Kaadan</span>
+          <span>Built with Three.js &amp; WebGL</span>
+        </footer>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="studio-hud" aria-hidden="true">
+    <span class="hud-index">01</span>
+    <span class="hud-phase">THE WORKSPACE</span>
+    <span class="hud-bar"><i></i></span>
+  </div>
+
+  <div id="lightbox" aria-hidden="true">
+    <button id="lightbox-close" aria-label="Close">&times;</button>
+    <figure>
+      <img src="./assets/photo.jpg" alt="Omran Kaadan" />
+      <figcaption>Omran Kaadan — Software Engineer</figcaption>
+    </figure>
+  </div>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
